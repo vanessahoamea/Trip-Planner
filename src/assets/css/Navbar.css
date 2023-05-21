@@ -1,0 +1,42 @@
+.navbar {
+    background-color: #0d99ff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.navbar-button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.navbar-button:hover {
+    background-color: #efefef;
+}
+
+.navbar-link {
+    color: white;
+    padding: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+    }
+}

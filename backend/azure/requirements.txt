@@ -1,0 +1,10 @@
+flask
+Flask-Cors
+flask_sqlalchemy
+psycopg2
+sqlalchemy
+python-dotenv
+requests
+pyjwt
+azure-identity
+azure-maps-search --pre
