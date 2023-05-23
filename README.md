@@ -1,5 +1,5 @@
 # Trip Planner
-Trip Planner is a website that aims to help people plan, shcedule and organize their travels.
+Trip Planner is a website that aims to help people plan, schedule and organize their travels.
 
 ## Tech Stack
 - Python with Flask (backend)

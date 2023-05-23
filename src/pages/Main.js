@@ -1,3 +1,6 @@
+import News from "../components/News";
+import "../assets/css/Main.css";
+
 export default function Main()
 {
     return (
@@ -10,7 +13,7 @@ export default function Main()
 
             {/* Translator + text-to-speech */}
 
-            {/* News search */}
+            <News />
             
             {/* Video search */}
         </div>
