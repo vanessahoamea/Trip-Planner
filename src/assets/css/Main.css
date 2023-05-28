@@ -3,7 +3,7 @@
 }
 
 .tab {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .tab-button {
@@ -59,7 +59,46 @@
     padding: 15px;
 }
 
-.news {
+#map {
+    width: 70vw;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.languages-button {
+    background: #0a0a23;
+    padding: 14px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+}
+
+.translated-text {
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.translated-text p {
+    font-size: 2em;
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+
+.round-button {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.news, .videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -78,6 +117,15 @@
     content: "📰 "
 }
 
+.videos {
+    flex-direction: row;
+}
+
+.videos iframe {
+    border: none;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 665px) {
     .article {
         width: 100%;
@@ -90,6 +138,9 @@
     .container input, .container button {
         width: 60vw;
     }
+    .languages-button {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -98,10 +149,12 @@
     }
     .tab-button:first-child {
         border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         border-bottom-left-radius: 0;
     }
     .tab-button:last-child {
         border-top-right-radius: 0;
         border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 }

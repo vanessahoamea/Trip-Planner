@@ -1,6 +1,6 @@
-import { useRef , useState } from "react";
+import { useRef, useState } from "react";
 
-export default function Claims()
+export default function News()
 {
     const refSearchParam = useRef(null);
     const [news, setNews] = useState(null);

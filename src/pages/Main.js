@@ -1,5 +1,8 @@
 import { useEffect } from "react";
+import Maps from "../components/Maps";
+import Translator from "../components/Translator";
 import News from "../components/News";
+import Videos from "../components/Videos";
 import "../assets/css/Main.css";
 
 export default function Main()
@@ -37,13 +40,11 @@ export default function Main()
             </div>
 
             <div id="maps" className="tab-content">
-                {/* Maps + time zone */}
-                TBA 1
+                <Maps />
             </div>
 
             <div id="translator" className="tab-content">
-                {/* Translator + text-to-speech */}
-                TBA 2
+                <Translator />
             </div>
 
             <div id="news" className="tab-content">
@@ -51,8 +52,7 @@ export default function Main()
             </div>
             
             <div id="videos" className="tab-content">
-                {/* Video search */}
-                TBA 4
+                <Videos />
             </div>
         </div>
     );
