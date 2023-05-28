@@ -33,9 +33,10 @@ export default function Translator()
                         placeholder="Enter text to be translated"
                     />
                     <select className="languages-button" name="language" id="language" onChange={handleChange}>
-                        <option value="ro" selected> Romanian</option>
+                        <option value="ro" selected>Romanian</option>
                         <option value="es">Spanish</option>
-                        <option value="zh-Hant">Chinese</option>
+                        <option value="fr">French</option>
+                        <option value="zh-CN">Chinese</option>
                         <option value="ru">Russian</option>
                     </select>
                     <button className="main-button" onClick={getTextTranslated}>Translate</button>
