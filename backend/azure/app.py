@@ -284,14 +284,6 @@ def text_to_speech():
         {text_from_client}
         </voice></speak>
         """
-    elif language_term == "zh-CN":
-        xml_content = f"""
-        <speak version='1.0' xml:lang='zh-CN'>
-        <voice xml:lang='zh-CN' xml:gender='Male'
-        name='zh-CN-YunhaoNeural'>
-        {text_from_client}
-        </voice></speak>
-        """
     elif language_term == "ro":
         xml_content = f"""
         <speak version='1.0' xml:lang='ro-RO'>
@@ -300,6 +292,23 @@ def text_to_speech():
         {text_from_client}
         </voice></speak>
         """
+    elif language_term == "zh-CN":
+        xml_content = f"""
+        <speak version='1.0' xml:lang='zh-CN'>
+        <voice xml:lang='zh-CN' xml:gender='Male'
+        name='zh-CN-YunhaoNeural'>
+        {text_from_client}
+        </voice></speak>
+        """
+    elif language_term == "ru":
+        xml_content = f"""
+        <speak version='1.0' xml:lang='ru-RU'>
+        <voice xml:lang='ru-RU' xml:gender='Male'
+        name='ru-RU-DmitryNeural'>
+        {text_from_client}
+        </voice></speak>
+        """    
+    
         
     try:
         response = requests.post(fetch_token_url, headers=headers, data = xml_content)
